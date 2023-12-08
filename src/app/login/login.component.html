@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="top-logo">
+    <img src="../../assets/images/shopping-bag-icon.png" alt="">
+  </div>
+</div>
+
+
+<section id="content" class="mb-5">
+  <!-- <div class="top-section"> </div>-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 d-flex align-items-center justify-content-center order-lg-0">
+        <div class="column-1 w-75">
+          <h2 class="text-capitalize text-white">My Site</h2>
+          <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit dicta repellat
+            corporis molestiae
+            doloremque odio.</p>
+        </div>
+      </div>
+      <div class="col-md-4 my-5 order-lg-1">
+        <mat-card class="d-flex justify-content-center align-items-center">
+          <mat-card-header>
+            <h1 class="text-center">User Login</h1>
+          </mat-card-header>
+          <mat-card-content>
+            <form class="example-form d-flex justify-content-center align-items-center flex-column" [formGroup]="loginForm">
+              <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput formControlName="user" [(ngModel)]="email">
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>password</mat-label>
+                <input type="password" matInput formControlName="password">
+              </mat-form-field>
+              <div>
+                <button type="submit" class="mx-2" mat-raised-button color="primary" (click)="proceedtologin()">Login</button>
+                <a routerLink="/register" mat-raised-button color="accent">Register</a>
+              </div>
+            </form>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>

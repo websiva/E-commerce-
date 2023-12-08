@@ -1,0 +1,28 @@
+  <app-navbar></app-navbar>
+  <section id="details">
+    <div class="container">
+      <div class="title text-center">
+        <h2 class="position-relative d-inline-block">Product Details</h2>
+      </div>
+      <div class="card my-3">
+        <div class="row g-0">
+          <div class="col-lg-4 product-img">
+            <img src={{img}} class="img-fluid rounded-start">
+          </div>
+          <div class="col-lg-8">
+            <div class="card-body">
+              <h1 class="card-title fw-bold">{{title}}</h1>
+              <h3 class="description-heading">Description:</h3>
+              <p class="card-text description">{{description}}</p>
+              <p class="card-text rating">{{rating}}</p>
+              <h2 class="card-text price fw-bold">{{price|currency:'USD'}}</h2>
+            </div>
+            <div class="card-footer bg-white">
+              <a class="btn btn-primary" (click)="addTocart('')">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-footer></app-footer>

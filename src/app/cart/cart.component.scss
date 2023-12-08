@@ -1,0 +1,44 @@
+.bg-primary{
+    background-color: var(--pink)!important;
+}
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+
+.products tr{
+    min-height: 120px;
+    max-height: 120px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cart-img img{
+    width: 100px;
+    height: 100px;
+}
+.empty-cart{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.empty-cart img{
+    display: block;
+    height:150px;
+    width: 150px;
+    left: 50%;
+}
+.empty-cart h2{
+    font-family: var(--lg-font)!important;
+}
+

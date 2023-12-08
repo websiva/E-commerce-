@@ -1,0 +1,17 @@
+#footer{
+    background-color: rgb(255, 255, 255);
+    font-family: var(--sm-font)!important;
+    color: rgb(0, 0, 0)!important;
+}
+
+#footer .box-1 p{
+    max-width: 225px;
+text-align: justify;
+}
+#footer .box-2 a:hover{
+color: var(--pink)!important;
+}
+
+#footer .box-4 .footer-icons a{
+    text-decoration: none;
+}

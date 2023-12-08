@@ -1,0 +1,49 @@
+<div class="navigation bg-white">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center flex-direction-row pt-3 pb-1">
+        <div class="footer-icons">
+          <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank" class="text-muted">
+            <i class="fa-brands fa-x-twitter fa-xl me-3"></i>
+          </a>
+          <a href="https://www.instagram.com/accounts/login/" target="_blank" class="text-muted">
+            <i class="fa-brands fa-instagram fa-xl me-3"></i>
+          </a>
+          <a href="https://www.facebook.com/login/" target="_blank" class="text-muted">
+            <i class="fa-brands fa-facebook fa-xl me-3"></i>
+          </a>
+          <a href="https://in.pinterest.com/login/" target="_blank" class="text-muted">
+            <i class="fa-brands fa-pinterest fa-xl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-white pt-2 pb-4">
+      <div class="container  d-flex justify-content-center align-items-center">
+        <!--logo-->
+        <a class="navbar-brand order-lg-0" [routerLink]="'home'" (click)="OnClick('header')">
+          <img src="../../assets/images/shopping-bag-icon.png" width="30" height="75" class="d-inline-block align-top" alt="site_icon">
+          <span class="text-uppercase fw-lighter ms-2 h4">My Site</span>
+        </a>
+        <div class=" order-lg-2 nav-btns d-flex justify-content-between align-items-center">
+          <button type="button" class="btn position-relative cart-button" routerLink="/cart">
+            <i class="fa fa-shopping-cart fa-2x"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">{{itemCount}}</span>
+          </button>
+        </div>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item py-2 px-2">
+              <a class="nav-link text-uppercase text-dark h2"  routerLink="/home" (click)="OnClick('collection')"><span class="h4">Home</span></a>
+            </li>
+            <li class="nav-item py-2 px-2">
+              <a class="nav-link text-uppercase text-dark"  routerLink="/products"><span class="h4">Products</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>

@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+  <div class="row">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="text-center">Student Details</h2>
+      </div>
+      <div class="card-body d-flex align-items-center justify-content-center flex-column">
+        <form [formGroup]="f">
+          <div class="inputs d-flex align-items-center justify-content-center">
+            <label for="name" class="m-3">Name:</label>
+            <input type="text" id="name" formControlName="Name"  class="m-3">
+            <label for="place" class="m-3">Place:</label>
+            <input type="text" formControlName="place" class="m-3">
+            <label for="course_id" class="m-3">Course Id:</label>
+            <input type="text" class="m-3" formControlName = "courseId">
+            <button type="submit" (click)="submit()">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

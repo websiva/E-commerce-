@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<section id="collection" class="my-lg-2">
+  <div class="container">
+    <div class="title text-center search_box">
+      <p class="h2">Products</p>
+      <form class="form-inline my-lg-0 d-flex justify-content-between align-items-center">
+        <input class="form-control mr-sm-2 mx-3" type="search" placeholder="Search" [(ngModel)]="searchTerm"
+          (keyup)="search($event)" aria-label="Search" name="search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center my-5 filter-button-group">
+      <a class="btn m-2 text-dark" (click)="filter('')">All</a>
+      <a class="btn m-2 text-dark" (click)="filter('men\'s clothing')">Men's</a>
+      <a class="btn m-2 text-dark" (click)="filter('women\'s clothing')">Women's</a>
+      <a class="btn m-2 text-dark" (click)="filter('electronics')">Electronics</a>
+      <a class="btn m-2 text-dark" (click)="filter('jewelery')">Jewellery</a>
+    </div>
+    <div class="row g-0 mb-5" *ngFor="let product of filterCategory|filter:searchTerm:'title'">
+      <div class="collection-list mt-4 gx-5 gy-5 col-4">
+        <div class="best">
+          <!--<a [routerLink]="['/details']" [queryParams]="{id:product.id}" (click)="details(product)">-->
+          <div class="collection-img  position-relative">
+            <img [src]=product.image alt="" class="">
+          </div>
+          <!--</a>-->
+        </div>
+      </div>
+      <div class="col-8 details">
+        <p class="collection_name text-capitalize h5">{{product.title}}</p>
+        <p class="description my-lg-3">{{product.description}}</p>
+        <span class="collection-price  fw-bold d-block my-lg-3">{{product.price|currency:'USD'}}</span>
+        <span class="add-to-cart">
+          <a (click)="addTocart(product)" class="btn btn-primary mt-3">Add To Cart</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<app-footer></app-footer>

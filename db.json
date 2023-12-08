@@ -1,0 +1,16 @@
+{
+  "register": [
+    {
+      "id": "admin",
+      "name": "sivakumar",
+      "email": "siva1202@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "siva1202",
+      "name": "sivakumar",
+      "email": "siva1202@gmail.com",
+      "password": "asdf"
+    }
+  ]
+}

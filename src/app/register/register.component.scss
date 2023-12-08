@@ -1,0 +1,20 @@
+
+ #card{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+ }
+ mat-card{
+   border: 3px solid rgb(167, 15, 15);
+   box-shadow: 10px 10px 5px lightblue;
+ }
+ #registercard{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   flex-direction: column;
+ }
+ mat-form-field{
+  width: 300px!important;
+ }
